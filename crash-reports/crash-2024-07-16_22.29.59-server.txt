@@ -1,0 +1,84 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 2024-07-16 22:29:59
+Description: Exception in server tick loop
+
+java.net.UnknownHostException: Este host não é conhecido (test_Alpha)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1568)
+	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:209)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:996)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:310)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21
+	Minecraft Version ID: 1.21
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.3, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 150014992 bytes (143 MiB) / 419430400 bytes (400 MiB) up to 4246732800 bytes (4050 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i3-12100F
+	Identifier: Intel64 Family 6 Model 151 Stepping 5
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 3.30
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: NVIDIA GeForce RTX 4060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8188.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.5612
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 25408.61
+	Virtual memory used (MiB): 12773.04
+	Swap memory total (MiB): 9216.00
+	Swap memory used (MiB): 137.53
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 23278.17, total: 121235.83
+	Space in storage for workdir (MiB): available: 232667.72, total: 976745.00
+	JVM Flags: 0 total; 
+	CraftBukkit Information: 
+   Running: 
+   Failed to handle CraftCrashReport:
+java.lang.NullPointerException: Cannot invoke "org.bukkit.Server.getName()" because "org.bukkit.Bukkit.server" is null
+	at org.bukkit.Bukkit.getName(Bukkit.java:109)
+	at org.bukkit.craftbukkit.v1_21_R1.CraftCrashReport.get(CraftCrashReport.java:23)
+	at org.bukkit.craftbukkit.v1_21_R1.CraftCrashReport.get(CraftCrashReport.java:17)
+	at net.minecraft.SystemReport.a(SourceFile:70)
+	at net.minecraft.CrashReport.<init>(CrashReport.java:39)
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1138)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:1057)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:310)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+	Server Running: true
+	Active Data Packs: vanilla, file/bukkit
+	Available Data Packs: bundle, file/bukkit, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -6388781527607136264
+	Is Modded: ERR
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,32 @@
+[14:20:11] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:20:12] [ServerMain/INFO]: Loaded 1290 recipes
+[14:20:13] [Server thread/INFO]: Starting minecraft server version 1.21
+[14:20:13] [Server thread/INFO]: Loading properties
+[14:20:13] [Server thread/INFO]: Default game type: CREATIVE
+[14:20:13] [Server thread/INFO]: Generating keypair
+[14:20:13] [Server thread/INFO]: Starting Minecraft server on 192.168.1.3:25565
+[14:20:13] [Server thread/INFO]: Using default channel type
+[14:20:13] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[14:20:13] [Server thread/WARN]: The exception was: java.net.BindException: Cannot assign requested address: bind
+[14:20:13] [Server thread/WARN]: Perhaps a server is already running on that port?
+[14:20:13] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:997) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:310) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[14:20:13] [Server thread/WARN]: Failed to get system info for Is Modded
+java.lang.NullPointerException: Cannot invoke "org.bukkit.craftbukkit.v1_21_R1.CraftServer.getName()" because "this.server" is null
+	at net.minecraft.server.MinecraftServer.getServerModName(MinecraftServer.java:1551) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.util.ModCheck.a(SourceFile:28) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.MinecraftServer.P(MinecraftServer.java:1593) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.dedicated.DedicatedServer.lambda$fillServerSystemReport$0(DedicatedServer.java:326) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.SystemReport.a(SourceFile:70) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.dedicated.DedicatedServer.a(DedicatedServer.java:325) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1587) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:1059) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:310) ~[craftbukkit-1.21-R0.1-SNAPSHOT.jar:4226-Bukkit-2889b3a]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[14:20:13] [Server thread/ERROR]: This crash report has been saved to: F:\MineS\crash-reports\crash-2024-08-18_14.20.13-server.txt
+[14:20:13] [Server thread/INFO]: Stopping server
+[14:20:13] [Server thread/INFO]: Saving worlds
+[14:20:13] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
